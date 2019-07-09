@@ -54,7 +54,7 @@ const robert = {
         return this.prenom + " " + this.nom + " " + this.pseudo;
     }
 };
-lg(afficherPersonne(robert));
+afficherPersonne(robert);
 
 // Héritage via une fonction constructeur
 function Client(prenom, nom, pseudo, numeroClient) {
@@ -67,6 +67,6 @@ function Client(prenom, nom, pseudo, numeroClient) {
 }
 
 var steve = new Client("Steve", "LUCAS", "steve44", "A01");
-lg(afficherPersonne(steve));
+afficherPersonne(steve);
 lg(steve.numeroClient);
 lg(steve.getInfos());
